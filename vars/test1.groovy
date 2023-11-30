@@ -1,1 +1,3 @@
-"Hello"
+def Greet(){
+  println("Hello Groovy")
+}
