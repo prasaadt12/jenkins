@@ -14,7 +14,7 @@ pipeline {
         }
         stage('good morning') {
             steps {
-                echo 'Joint ops
+                echo 'Joint ops'
             }  
         }
     }
