@@ -9,14 +9,14 @@ pipeline {
         }
         stage('Read_Contents') {
             steps {
-                sh 'dir'
+                bat 'dir'
             }
         }
-        // stage('Read_file') {
-        //     steps {
-        //         sh 'Readit.txt'
-        //     }  
-        // }
+        stage('Read_file') {
+            steps {
+                bat 'Readit.txt'
+            }  
+        }
     }
     
 }
