@@ -15,7 +15,8 @@ pipeline {
         stage('Read_file') {
             steps {
                 script {
-                    bat 'Readit.txt'
+                    def fileread = readFile('Readit.txt')
+                    echo "content in 'Readit.txt': ${fileread}"
                 }
             }  
         }
