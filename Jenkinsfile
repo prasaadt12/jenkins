@@ -8,12 +8,15 @@ pipeline {
             }
         }
         stage('Hello1') {
-                steps {
-                    echo 'Hello World'
-                }
+            steps {
+                echo 'Hello World'
             }
+        }
         stage('good morning') {
-            }
+            steps {
+                echo 'Joint ops
+            }  
+        }
     }
     
 }
