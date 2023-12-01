@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Read_file') {
             steps {
-                echo Readit
+                more Readit 2>nul
             }  
         }
     }
