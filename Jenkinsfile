@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Read_file') {
             steps {
-                type 'Readit.txt'
+                echo 'Readit.txt'
             }  
         }
     }
