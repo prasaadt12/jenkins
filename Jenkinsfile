@@ -14,7 +14,9 @@ pipeline {
         }
         stage('Read_file') {
             steps {
-                more Readit
+                script {
+                    bat 'Readit.txt'
+                }
             }  
         }
     }
