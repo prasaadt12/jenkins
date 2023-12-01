@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Checkout') {
             steps {
-                echo 'Hello World'
+                git branch: 'main', url: 'https://github.com/prasaadt12/jenkins.git/'
             }
         }
-        stage('Hello1') {
+        stage('Read_Contents') {
             steps {
-                echo 'Hello World'
+                sh 'dir'
             }
         }
-        stage('good morning') {
+        stage('Read_file') {
             steps {
-                echo 'Joint ops'
+                sh 'Readit.txt'
             }  
         }
     }
