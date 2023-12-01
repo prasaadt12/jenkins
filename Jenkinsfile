@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Read_file') {
             steps {
-                print 'Readit.txt'
+                'print Readit.txt'
             }  
         }
     }
